@@ -9,7 +9,8 @@ object springfield
 	}
 }
 
-object burns{
+object burns
+{
 	var property varillas = 10
 	
 	method produccionEnergetica(ciudad){
@@ -21,7 +22,8 @@ object burns{
 	}
 }
 
-object exBosque{
+object exBosque
+{
 	var property capacidad = 20
 	
 	method produccionEnergetica(ciudad){
@@ -33,7 +35,8 @@ object exBosque{
 	}
 }
 
-object elSuspiro{
+object elSuspiro
+{
 	var turbinas = [turbinaCopada]
 	var property produccionPorTurbina = 0.2
 	
@@ -46,7 +49,8 @@ object elSuspiro{
 	}
 }
 
-object turbinaCopada{
+object turbinaCopada
+{
 	method produccionEnergetica(){
 		return 0.2
 	}
