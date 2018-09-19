@@ -1,0 +1,29 @@
+import example.*
+
+describe "test de las centrales"{
+
+var cantidadEsperada = 18.5
+
+test "Burns con 10 varillas produce 1 Mkwh en Springfield" {
+	assert.equals(1, burns.produccionEnergetica(springfield))
+}
+
+test "exBosque con una capacidad de 20 toneladas produce 18.5 Mkwh en Springfield"{
+	assert.equals(cantidadEsperada, exBosque.produccionEnergetica(springfield))
+}
+
+test "exBosque es contaminante"{
+	assert.that(exBosque.esContaminante())
+}
+
+//test "exBosque es contaminante con mucha capacidad"{
+//	exBosque.capacidad(11)
+//	assert.that(exBosque.esContaminante())
+//}
+//
+//test "exBosque no es contaminante con mucha capacidad"{
+//	exBosque.capacidad(9)
+//	assert.notThat(exBosque.esContaminante())
+//}
+
+}
